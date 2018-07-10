@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
+const databaseURL = require('./databaseURL')
 
-module.exports = mongoose.connect('mongodb://localhost/todo')
+module.exports = mongoose.connect(databaseURL)
